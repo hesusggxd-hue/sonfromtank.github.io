@@ -5,74 +5,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio - SonFromTank</title>
   <style>
-    body {
+    /* RESET BÁSICO */
+    * {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #f5f5f5;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #111;
       line-height: 1.6;
     }
+
     header {
       text-align: center;
-      padding: 2rem 1rem;
-      background: rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(6px);
+      padding: 3rem 1rem;
+      border-bottom: 1px solid #ccc;
     }
+
     header h1 {
-      margin: 0;
       font-size: 2.5rem;
-      color: #00d9ff;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
     }
+
     header p {
-      margin: 0.5rem 0 0;
-      font-style: italic;
+      font-size: 1.1rem;
+      color: #555;
     }
+
     main {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
+
     section {
       margin-bottom: 2rem;
       padding: 1.5rem;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border-left: 4px solid #111;
     }
+
     section h2 {
-      color: #00d9ff;
+      font-size: 1.5rem;
       margin-bottom: 1rem;
+      color: #111;
+      font-weight: 600;
     }
+
     ul {
-      padding-left: 1.2rem;
+      list-style: none;
+      padding-left: 0;
     }
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+
+    li strong {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
     blockquote {
-      margin: 1rem 0;
       padding: 1rem;
-      background: rgba(0,0,0,0.3);
-      border-left: 4px solid #00d9ff;
+      border-left: 4px solid #111;
+      color: #555;
       font-style: italic;
-      border-radius: 8px;
+      background-color: #f9f9f9;
+      border-radius: 4px;
     }
+
     .contacto a {
       display: inline-block;
-      margin: 0.5rem;
-      padding: 0.7rem 1rem;
-      border-radius: 8px;
+      margin: 0.5rem 0.5rem 0 0;
+      padding: 0.6rem 1rem;
       text-decoration: none;
-      background: #00d9ff;
-      color: #0f2027;
-      font-weight: bold;
-      transition: background 0.3s ease;
+      color: #fff;
+      background-color: #111;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: background 0.3s;
     }
+
     .contacto a:hover {
-      background: #00a7c7;
+      background-color: #555;
     }
+
     footer {
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
-      background: rgba(0,0,0,0.5);
+      color: #555;
+      border-top: 1px solid #ccc;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      section {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
@@ -81,6 +119,7 @@
     <h1>SonFromTank</h1>
     <p>Staff de Minecraft • Moderador & ScreenShare</p>
   </header>
+
   <main>
     <section>
       <h2>Sobre Mí</h2>
@@ -90,9 +129,18 @@
     <section>
       <h2>Experiencia</h2>
       <ul>
-        <li><strong>Jr. Admin - RayoMC</strong> (3 meses)<br>Formación como staff veterano, supervisión de equipo de entrevistas. <em>Staff del mes x2</em>, <em>Staff de la semana x7</em>.</li>
-        <li><strong>Helper - Sharkbox</strong><br>Moderación activa en Discord y Minecraft, resolución efectiva de conflictos.</li>
-        <li><strong>Helper - Minebosh</strong><br>Apoyo en comunicación, trabajo en equipo e integración de jugadores. Sociable y multilingüe.</li>
+        <li>
+          <strong>Jr. Admin - RayoMC (3 meses)</strong>
+          Formación como staff veterano, supervisión de equipo de entrevistas. <em>Staff del mes x2</em>, <em>Staff de la semana x7</em>.
+        </li>
+        <li>
+          <strong>Helper - Sharkbox</strong>
+          Moderación activa en Discord y Minecraft, resolución efectiva de conflictos.
+        </li>
+        <li>
+          <strong>Helper - Minebosh</strong>
+          Apoyo en comunicación, trabajo en equipo e integración de jugadores. Sociable y multilingüe.
+        </li>
       </ul>
     </section>
 
@@ -128,6 +176,7 @@
       <a href="#">IGN: SonFromTank</a>
     </section>
   </main>
+
   <footer>
     © 2025 SonFromTank — Minecraft Staff Portfolio
   </footer>
